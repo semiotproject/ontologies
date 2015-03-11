@@ -4,3 +4,4 @@ OWL ontologies created within [SemIoT](http://semiot.ru) project which mainly co
 
 ## Related works
 * https://github.com/ox-it/metering-ontology
+* [SEAS ontology](http://purl.org/NET/seas)
