@@ -13,7 +13,7 @@ Ontology URI: http://purl.org/NET/ssnext/communication#
 @prefix hmtr: <http://purl.org/NET/ssnext/heatmeters#>
 @prefix ssncom: <http://purl.org/NET/ssnext/communication#>
 
-<coap://localhost:3131> a hmtr:HeatMeter .
+<coap://localhost:3131> a hmtr:HeatMeter ;
     ssn:hasSubsystem <coap://localhost:3131/temperature> ;
 	ssn:hasSubsystem <coap://localhost:3131/heat> .
 
@@ -28,9 +28,9 @@ Ontology URI: http://purl.org/NET/ssnext/communication#
     ssncom:hasCommunicationEndpoint <ws://localhost/ws?topic=coap://localhost:3131/heat/obs>.
 
 <coap://localhost:3131/temperature/obs> a ssncom:CommunicationEndpoint ;
-    ssncoom:protocol "COAP" .
+    ssncom:protocol "COAP" .
 <coap://localhost:3131/heat/obs> a ssncom:CommunicationEndpoint ;
-    ssncoom:protocol "COAP" .
+    ssncom:protocol "COAP" .
 <ws://localhost/ws?topic=coap://localhost:3131/temperature/obs> a ssncom:CommunicationEndpoint ;
 	ssncom:protocol "WAMP" .
 <ws://localhost/ws?topic=coap://localhost:3131/heat/obs> a ssncom:CommunicationEndpoint ;
