@@ -20,19 +20,19 @@ Ontology URI: http://purl.org/NET/ssnext/communication#
 <coap://localhost:3131/temperature> a ssn:Sensor ;
 	ssn:observes hmtr:Temperature ;
 	ssncom:hasCommunicationEndpoint <coap://localhost:3131/temperature/obs> ;
-    ssncom:hasCommunicationEndpoint <ws://localhost/ws?topic=coap://localhost:3131/temperature/obs> .
+    ssncom:hasCommunicationEndpoint <ws://localhost/ws?topic=localhost.3131.temperature.obs> .
 
 <coap://localhost:3131/heat> a ssn:Sensor ;
 	ssn:observes hmtr:Heat ;
 	ssncom:hasCommunicationEndpoint <coap://localhost:3131/heat/obs> ;
-    ssncom:hasCommunicationEndpoint <ws://localhost/ws?topic=coap://localhost:3131/heat/obs>.
+    ssncom:hasCommunicationEndpoint <ws://localhost/ws?topic=localhost.3131.heat.obs>.
 
 <coap://localhost:3131/temperature/obs> a ssncom:CommunicationEndpoint ;
     ssncom:protocol "COAP" .
 <coap://localhost:3131/heat/obs> a ssncom:CommunicationEndpoint ;
     ssncom:protocol "COAP" .
-<ws://localhost/ws?topic=coap://localhost:3131/temperature/obs> a ssncom:CommunicationEndpoint ;
+<ws://localhost/ws?topic=localhost.3131.temperature.obs> a ssncom:CommunicationEndpoint ;
 	ssncom:protocol "WAMP" .
-<ws://localhost/ws?topic=coap://localhost:3131/heat/obs> a ssncom:CommunicationEndpoint ;
+<ws://localhost/ws?topic=localhost.3131.heat.obs> a ssncom:CommunicationEndpoint ;
 	ssncom:protocol "WAMP" .
 ```
