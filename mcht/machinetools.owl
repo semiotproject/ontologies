@@ -24,33 +24,117 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.oclc.org/NET/ssnx/ssn</Import>
     <Declaration>
-        <Class IRI="http://purl.org/NET/ssnext/machinetools#ButtonsObservation"/>
+        <Class IRI="ButtonsObservation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/NET/ssnext/machinetools#EnumValue"/>
+        <Class IRI="EnumValue"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/NET/ssnext/machinetools#MachineTool"/>
+        <Class IRI="MachineTool"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.org/NET/ssnext/machinetools#WorkingStateObservation"/>
+        <Class IRI="PauseStateValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkingStateObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkingStateValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Adjustment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ControlDetail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Crash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Energize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Failure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="HaveNotMaterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="HaveNotProgram"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="InWork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Maintenance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ReplacementDetail"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="http://purl.org/NET/ssnext/machinetools#ButtonsObservation"/>
+        <Class IRI="ButtonsObservation"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/NET/ssnext/machinetools#EnumValue"/>
+        <Class IRI="EnumValue"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/NET/ssnext/machinetools#MachineTool"/>
+        <Class IRI="MachineTool"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.org/NET/ssnext/machinetools#WorkingStateObservation"/>
+        <Class IRI="PauseStateValue"/>
+        <Class IRI="EnumValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkingStateObservation"/>
         <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkingStateValue"/>
+        <Class IRI="EnumValue"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="PauseStateValue"/>
+        <NamedIndividual IRI="Adjustment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PauseStateValue"/>
+        <NamedIndividual IRI="ControlDetail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WorkingStateValue"/>
+        <NamedIndividual IRI="Crash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WorkingStateValue"/>
+        <NamedIndividual IRI="Energize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PauseStateValue"/>
+        <NamedIndividual IRI="Failure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PauseStateValue"/>
+        <NamedIndividual IRI="HaveNotMaterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PauseStateValue"/>
+        <NamedIndividual IRI="HaveNotProgram"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WorkingStateValue"/>
+        <NamedIndividual IRI="InWork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PauseStateValue"/>
+        <NamedIndividual IRI="Maintenance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PauseStateValue"/>
+        <NamedIndividual IRI="ReplacementDetail"/>
+    </ClassAssertion>
 </Ontology>
 
 
