@@ -54,9 +54,6 @@
         <NamedIndividual IRI="Energize"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="Failure"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="HaveNotMaterial"/>
     </Declaration>
     <Declaration>
@@ -70,6 +67,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ReplacementDetail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Unknown"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="UnknownState"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="ButtonsObservation"/>
@@ -113,10 +116,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="PauseStateValue"/>
-        <NamedIndividual IRI="Failure"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PauseStateValue"/>
         <NamedIndividual IRI="HaveNotMaterial"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -134,6 +133,14 @@
     <ClassAssertion>
         <Class IRI="PauseStateValue"/>
         <NamedIndividual IRI="ReplacementDetail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PauseStateValue"/>
+        <NamedIndividual IRI="Unknown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="WorkingStateValue"/>
+        <NamedIndividual IRI="UnknownState"/>
     </ClassAssertion>
 </Ontology>
 
