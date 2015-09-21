@@ -1,148 +1,183 @@
 <?xml version="1.0"?>
 
 
-<!DOCTYPE Ontology [
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
 
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://purl.org/NET/ssnext/machinetools#"
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://purl.org/NET/ssnext/machinetools#"
-     versionIRI="http://purl.org/NET/ssnext/machinetools/1.0.0">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.oclc.org/NET/ssnx/ssn</Import>
-    <Declaration>
-        <Class IRI="ButtonsObservation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="EnumValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="MachineTool"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="PauseStateValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="WorkingStateObservation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="WorkingStateValue"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Adjustment"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="ControlDetail"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Crash"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Energize"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="HaveNotMaterial"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="HaveNotProgram"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="InWork"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Maintenance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="ReplacementDetail"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="Unknown"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="UnknownState"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="ButtonsObservation"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="EnumValue"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="MachineTool"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#System"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="PauseStateValue"/>
-        <Class IRI="EnumValue"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="WorkingStateObservation"/>
-        <Class IRI="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="WorkingStateValue"/>
-        <Class IRI="EnumValue"/>
-    </SubClassOf>
-    <ClassAssertion>
-        <Class IRI="PauseStateValue"/>
-        <NamedIndividual IRI="Adjustment"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PauseStateValue"/>
-        <NamedIndividual IRI="ControlDetail"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="WorkingStateValue"/>
-        <NamedIndividual IRI="Crash"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="WorkingStateValue"/>
-        <NamedIndividual IRI="Energize"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PauseStateValue"/>
-        <NamedIndividual IRI="HaveNotMaterial"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PauseStateValue"/>
-        <NamedIndividual IRI="HaveNotProgram"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="WorkingStateValue"/>
-        <NamedIndividual IRI="InWork"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PauseStateValue"/>
-        <NamedIndividual IRI="Maintenance"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PauseStateValue"/>
-        <NamedIndividual IRI="ReplacementDetail"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="PauseStateValue"/>
-        <NamedIndividual IRI="Unknown"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="WorkingStateValue"/>
-        <NamedIndividual IRI="UnknownState"/>
-    </ClassAssertion>
-</Ontology>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://purl.org/NET/ssnext/machinetools#">
+        <imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
+        <versionIRI rdf:resource="http://purl.org/NET/ssnext/machinetools/1.0.0"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#ButtonsObservation -->
+
+    <Class rdf:about="http://purl.org/NET/ssnext/machinetools#ButtonsObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#EnumValue -->
+
+    <Class rdf:about="http://purl.org/NET/ssnext/machinetools#EnumValue">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#MachineTool -->
+
+    <Class rdf:about="http://purl.org/NET/ssnext/machinetools#MachineTool">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#PauseStateValue -->
+
+    <Class rdf:about="http://purl.org/NET/ssnext/machinetools#PauseStateValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnext/machinetools#EnumValue"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#WorkingStateObservation -->
+
+    <Class rdf:about="http://purl.org/NET/ssnext/machinetools#WorkingStateObservation">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#WorkingStateValue -->
+
+    <Class rdf:about="http://purl.org/NET/ssnext/machinetools#WorkingStateValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/ssnext/machinetools#EnumValue"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#Adjustment -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Adjustment">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#PauseStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#ControlDetail -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#ControlDetail">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#PauseStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#Crash -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Crash">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#WorkingStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#Energize -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Energize">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#WorkingStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#HaveNotMaterial -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#HaveNotMaterial">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#PauseStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#HaveNotProgram -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#HaveNotProgram">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#PauseStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#InWork -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#InWork">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#WorkingStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#Maintenance -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Maintenance">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#PauseStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#ReplacementDetail -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#ReplacementDetail">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#PauseStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#Unknown -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Unknown">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#PauseStateValue"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/machinetools#UnknownState -->
+
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#UnknownState">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#WorkingStateValue"/>
+    </NamedIndividual>
+</rdf:RDF>
 
 
 
