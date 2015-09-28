@@ -5,6 +5,7 @@
     <!ENTITY vann "http://purl.org/vocab/vann/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ssn "http://purl.oclc.org/NET/ssnx/ssn#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
@@ -57,7 +58,7 @@
     <!-- http://purl.org/NET/ssnext/climate-feature#Air -->
 
     <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#Air">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="&ssn;FeatureOfInterest"/>
     </owl:Class>
     
 
@@ -65,8 +66,7 @@
     <!-- http://purl.org/NET/ssnext/climate-feature#AirHumidity -->
 
     <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#AirHumidity">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-	<ssn:isPropertyOf rdf:resource="http://purl.org/NET/ssnext/climate-feature#Air"/>
+        <rdfs:subClassOf rdf:resource="&ssn;Property"/>
     </owl:Class>
     
 
@@ -74,8 +74,7 @@
     <!-- http://purl.org/NET/ssnext/climate-feature#AirTemperature -->
 
     <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#AirTemperature">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-	<ssn:isPropertyOf rdf:resource="http://purl.org/NET/ssnext/climate-feature#Air"/>
+        <rdfs:subClassOf rdf:resource="&ssn;Property"/>
     </owl:Class>
     
 
@@ -88,11 +87,90 @@
     
 
 
+    <!-- http://purl.org/NET/ssnext/climate-feature#KilometerPerHour -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#KilometerPerHour">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#MeterPerSecond -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#MeterPerSecond">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/NET/ssnext/climate-feature#RelativeHumidity -->
 
     <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#RelativeHumidity">
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#Wind -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#Wind">
+        <rdfs:subClassOf rdf:resource="&ssn;FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#WindSpeed -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#WindSpeed">
+        <rdfs:subClassOf rdf:resource="&ssn;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#Air -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NET/ssnext/climate-feature#Air"/>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#AirHumidity -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NET/ssnext/climate-feature#AirHumidity">
+        <ssn:isPropertyOf rdf:resource="http://purl.org/NET/ssnext/climate-feature#Air"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#AirTemperature -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NET/ssnext/climate-feature#AirTemperature">
+        <ssn:isPropertyOf rdf:resource="http://purl.org/NET/ssnext/climate-feature#Air"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#Wind -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NET/ssnext/climate-feature#Wind"/>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#WindSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/NET/ssnext/climate-feature#WindSpeed">
+        <ssn:isPropertyOf rdf:resource="http://purl.org/NET/ssnext/climate-feature#Wind"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
