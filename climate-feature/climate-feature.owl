@@ -79,6 +79,14 @@
     
 
 
+    <!-- http://purl.org/NET/ssnext/climate-feature#Angle -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#Angle">
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/NET/ssnext/climate-feature#Celsius -->
 
     <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#Celsius">
@@ -115,6 +123,15 @@
 
     <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#Wind">
         <rdfs:subClassOf rdf:resource="&ssn;FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/NET/ssnext/climate-feature#WindDirection -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnext/climate-feature#WindDirection">
+        <rdfs:subClassOf rdf:resource="&ssn;Property"/>
+	<ssn:isPropertyOf rdf:resource="http://purl.org/NET/ssnext/climate-feature#Wind"/>
     </owl:Class>
     
 
