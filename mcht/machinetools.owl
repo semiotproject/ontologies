@@ -25,39 +25,11 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/NET/ssnext/machinetools#hasEnumValue -->
-
-    <ObjectProperty rdf:about="http://purl.org/NET/ssnext/machinetools#hasEnumValue">
-        <rdfs:subPropertyOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasValue"/>
-        <rdfs:domain rdf:resource="http://purl.org/NET/ssnext/machinetools#EnumValue"/>
-    </ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/NET/ssnext/machinetools#EnumValue -->
-
-    <Class rdf:about="http://purl.org/NET/ssnext/machinetools#EnumValue">
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
-    </Class>
     
 
 
