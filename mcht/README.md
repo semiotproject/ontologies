@@ -18,7 +18,7 @@ Ontology URI: http://purl.org/NET/ssnext/machinetools#
   ssn:hasSubSystem :mt-0-state .
   
 :mt-0-st a ssn:SensingDevice ;
-  ssn:observes mcht:MachineToolState .
+  ssn:observes mcht:MachineToolWorkingState .
 ```
 
 ## An observation
@@ -30,7 +30,7 @@ Ontology URI: http://purl.org/NET/ssnext/machinetools#
 @prefix : <http://example.com/> .
 
 :mt-0-${TIMESTAMP} a ssn:Observation ;
-  ssn:observedProperty mcht:MachineToolState ;
+  ssn:observedProperty mcht:MachineToolWorkingState ;
   ssn:observedBy :mt-0-st ;
   ssn:observationResultTime "${DATETIME}"^^xsd:dateTime;
   ssn:observationResult [ 
