@@ -36,8 +36,8 @@ Ontology URI: http://purl.org/NET/ssnext/machinetools#
   ssn:observationResult [ 
     a ssn:SensorOutput ;
     ssn:hasValue [
-      a mcht:EnumValue ;
-      ssn:hasEnumValue mcht:IsInExecutionOfTask.
+      a qudt:Enumeration ;
+      ssn:hasValue mcht:IsInExecutionOfTask .
     ] . 
   ] .
 ```
