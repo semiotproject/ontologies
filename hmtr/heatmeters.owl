@@ -39,24 +39,6 @@
     
 
 
-    <!-- http://purl.org/NET/ssnext/heatmeters#Heat -->
-
-    <owl:Class rdf:about="http://purl.org/NET/ssnext/heatmeters#Heat">
-        <rdfs:label xml:lang="ru">Теплота</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/NET/ssnext/heatmeters#HeatCarrier -->
-
-    <owl:Class rdf:about="http://purl.org/NET/ssnext/heatmeters#HeatCarrier">
-        <rdfs:label xml:lang="ru">Теплоноситель</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/NET/ssnext/heatmeters#HeatMeter -->
 
     <owl:Class rdf:about="http://purl.org/NET/ssnext/heatmeters#HeatMeter">
