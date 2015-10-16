@@ -18,7 +18,18 @@ Ontology URI: http://purl.org/NET/ssnext/machinetools#
   ssn:hasSubSystem :mt-0-state .
   
 :mt-0-st a ssn:SensingDevice ;
-  ssn:observes mcht:MachineToolWorkingState .
+  ssn:observes mcht:MachineToolWorkingState ;
+  ssn:hasMeasurementCapability [
+    a ssn:MeasurementCapability ;
+    ssn:forProperty mcht:MachineToolWorkingState ;
+    ssn:hasMeasurementProperty [
+      a qudt:Unit ;
+      ssn:hasValue [
+        a qudt:Enumeration ;
+        ssn:hasValue ssn:mcht:MachineToolWorkingStateValue ;
+      ] ;
+    ]
+  ] .
 ```
 
 ## An observation
