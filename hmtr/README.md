@@ -29,7 +29,10 @@ Ontology URI: http://purl.org/NET/ssnext/heatmeters#
     ssn:forProperty qudt-quantity:ThermodynamicTemperature ;
     ssn:hasMeasurementProperty [
       a qudt:Unit ;
-      ssn:hasValue qudt-unit:DegreeCelsius. 
+      ssn:hasValue [
+        a qudt:Quantity ;
+        ssn:hasValue qudt-unit:DegreeCelsius ;
+      ] ; 
     ] .
   ] .
   
@@ -40,7 +43,10 @@ Ontology URI: http://purl.org/NET/ssnext/heatmeters#
     ssn:forProperty qudt-quantity:SpecificHeatCapacity ;
     ssn:hasMeasurementProperty [
       a qudt:Unit ;
-      ssn:hasValue qudt-unit:Kilocalorie .
+      ssn:hasValue [
+        a qudt:Quantity ;
+        ssn:hasValue qudt-unit:Kilocalorie ;
+      ] ;
     ] .
   ] .
 ```
