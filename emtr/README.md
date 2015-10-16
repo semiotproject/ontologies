@@ -30,8 +30,11 @@ Ontology URI: http://purl.org/NET/ssnext/electricmeters#
     ssn:forProperty qudt-quantity:Ampere ;
     ssn:hasMeasurementProperty [
       a qudt:Unit ;
-      ssn:hasValue qudt-unit:Ampere. 
-    ] .
+      ssn:hasValue [
+        a qudt:Quantity ;
+        ssn:hasValue qudt-unit:Ampere ;
+      ] ;
+    ] ;
   ] .
 
 :emeter-0-voltage a ssn:SensingDevice ;
@@ -41,8 +44,11 @@ Ontology URI: http://purl.org/NET/ssnext/electricmeters#
     ssn:forProperty qudt-quantity:ElectromotiveForce ;
     ssn:hasMeasurementProperty [
       a qudt:Unit ;
-      ssn:hasValue qudt-unit:Volt .
-    ] .
+      ssn:hasValue [ 
+        a qudt:Quantity ;
+        ssn:hasValue qudt-unit:Volt ;
+      ] ;
+    ] ;
   ] .
   
 :emeter-0-power a ssn:SensingDevice ;
