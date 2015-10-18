@@ -19,10 +19,10 @@
         <imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
         <versionIRI rdf:resource="http://purl.org/NET/ssnext/machinetools/1.0.0"/>
     </Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -30,7 +30,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#MachineTool -->
@@ -41,7 +41,7 @@
         <rdfs:seeAlso rdf:datatype="&xsd;anyURI">https://en.wikipedia.org/wiki/Machine_tool</rdfs:seeAlso>
         <rdfs:comment xml:lang="en">A machine tool is a machine for shaping or machining metal or other rigid materials, usually by cutting, boring, grinding, shearing, or other forms of deformation. Machine tools employ some sort of tool that does the cutting or shaping. All machine tools have some means of constraining the workpiece and provide a guided movement of the parts of the machine.</rdfs:comment>
     </Class>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#MachineToolWorkingState -->
@@ -49,7 +49,7 @@
     <Class rdf:about="http://purl.org/NET/ssnext/machinetools#MachineToolWorkingState">
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
     </Class>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#MachineToolWorkingStateValue -->
@@ -58,10 +58,10 @@
         <rdfs:label xml:lang="en">Рабочее состояние станка</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute"/>
     </Class>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -69,49 +69,49 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#Adjustment -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Adjustment"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#ControlDetail -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#ControlDetail"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#Crash -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Crash"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#Energize -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Energize"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#HaveNotMaterial -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#HaveNotMaterial"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#HaveNotProgram -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#HaveNotProgram"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#InWork -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#InWork"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsInExecutionOfTask -->
@@ -121,7 +121,7 @@
         <rdfs:label xml:lang="ru">Выполнение работы</rdfs:label>
         <rdfs:comment xml:lang="ru">Станок включен и выполняет работу.</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsOutOfCommission -->
@@ -131,7 +131,7 @@
         <rdfs:label xml:lang="ru">В аварийном состоянии</rdfs:label>
         <rdfs:comment xml:lang="ru">Станок включен, но находится в аварийном состоянии.</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsOutOfMaterial -->
@@ -141,7 +141,7 @@
         <rdfs:label xml:lang="ru">Нет материала</rdfs:label>
         <rdfs:comment xml:lang="ru">Станок включен, но отсутствует материал.</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsOutOfProgram -->
@@ -151,7 +151,7 @@
         <rdfs:label xml:lang="ru">Нет программы</rdfs:label>
         <rdfs:comment xml:lang="ru">Станок включен, но отсутствует программа.</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsTurnedOff -->
@@ -159,8 +159,9 @@
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#IsTurnedOff">
         <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#MachineToolWorkingStateValue"/>
         <rdfs:label xml:lang="ru">Выключен(а)</rdfs:label>
+        <rdfs:comment xml:lang="ru">Станок выключен</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsUnderChangingOfProduct -->
@@ -170,7 +171,7 @@
         <rdfs:label xml:lang="ru">Смена детали</rdfs:label>
         <rdfs:comment xml:lang="ru">Станок включен, идет смена детали.</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsUnderInspectionOfProduct -->
@@ -180,7 +181,7 @@
         <rdfs:label xml:lang="ru">Контроль детали</rdfs:label>
         <rdfs:comment xml:lang="ru">Станок включен, идет контроль готовой детали.</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsUnderMaintenance -->
@@ -190,7 +191,7 @@
         <rdfs:label xml:lang="ru">На техническом обслуживании</rdfs:label>
         <rdfs:comment xml:lang="ru">Станок включен, но находиться на техническом обслуживании.</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#IsUnderSettingUp -->
@@ -200,25 +201,29 @@
         <rdfs:label xml:lang="ru">Наладка</rdfs:label>
         <rdfs:comment xml:lang="ru">Станок включен, но идет его наладка.</rdfs:comment>
     </NamedIndividual>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#Maintenance -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Maintenance"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#ReplacementDetail -->
 
     <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#ReplacementDetail"/>
-    
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#Unknown -->
 
-    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#Unknown"/>
-    
+    <NamedIndividual rdf:about="http://purl.org/NET/ssnext/machinetools#IsInUnknownState">
+        <rdf:type rdf:resource="http://purl.org/NET/ssnext/machinetools#MachineToolWorkingStateValue"/>
+        <rdfs:label xml:lang="ru">Неизвестно</rdfs:label>
+        <rdfs:comment xml:lang="ru">Состояние станка неизвестно</rdfs:comment>
+    </NamedIndividual>
+
 
 
     <!-- http://purl.org/NET/ssnext/machinetools#UnknownState -->
