@@ -12,8 +12,8 @@ Ontology URI: http://purl.org/NET/ssnext/electricmeters#
 
 ```
 @prefix ssn: <http://purl.oclc.org/NET/ssnx/ssn#> .
-@prefix qudt-quantity: <qudt.org/1.1/vocab/quantity#> .
-@prefix qudt-unit: <qudt.org/1.1/vocab/unit#> .
+@prefix qudt-quantity: <http://qudt.org/vocab/quantity#> .
+@prefix qudt-unit: <http://qudt.org/vocab/unit#> .
 @prefix qudt: <http://www.qudt.org/qudt/owl/1.0.0/qudt/#> .
 @prefix emtr: <http://purl.org/NET/ssnext/electricmeters#> .
 @prefix : <http://example.com/> .
