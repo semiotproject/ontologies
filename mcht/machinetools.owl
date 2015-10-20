@@ -50,6 +50,7 @@
     <!-- http://purl.org/NET/ssnext/machinetools#MachineToolWorkingState -->
 
     <Class rdf:about="http://purl.org/NET/ssnext/machinetools#MachineToolWorkingState">
+        <rdfs:label xml:lang="ru">Рабочее состояние станка</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
     </Class>
     
@@ -58,7 +59,7 @@
     <!-- http://purl.org/NET/ssnext/machinetools#MachineToolWorkingStateValue -->
 
     <Class rdf:about="http://purl.org/NET/ssnext/machinetools#MachineToolWorkingStateValue">
-        <rdfs:label xml:lang="en">Рабочее состояние станка</rdfs:label>
+        <rdfs:label xml:lang="ru">Рабочее состояние станка</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute"/>
     </Class>
     
