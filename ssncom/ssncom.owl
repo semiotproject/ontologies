@@ -63,6 +63,15 @@
     
 
 
+    <!-- http://purl.org/NET/ssnext/communication#topic -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/NET/ssnext/communication#topic">
+        <rdfs:domain rdf:resource="http://purl.org/NET/ssnext/communication#CommunicationEndpoint"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
