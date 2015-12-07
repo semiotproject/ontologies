@@ -33,6 +33,13 @@ Ontology URI: http://purl.org/NET/ssnext/heatmeters#
         a qudt:Quantity ;
         ssn:hasValue qudt-unit:DegreeCelsius ;
       ] ; 
+    ] ;
+    ssn:hasMeasurementProperty [
+      a ssn:Accuracy ;
+      ssn:hasValue [
+        a qudt:QuantityValue ;
+        ssn:hasValue "1.0"^^xsd:double ;
+      ] ;
     ] .
   ] .
   
@@ -46,6 +53,13 @@ Ontology URI: http://purl.org/NET/ssnext/heatmeters#
       ssn:hasValue [
         a qudt:Quantity ;
         ssn:hasValue qudt-unit:Kilocalorie ;
+      ] ;
+    ] ;
+    ssn:hasMeasurementProperty [
+      a ssn:Accuracy ;
+      ssn:hasValue [
+        a qudt:QuantityValue ;
+        ssn:hasValue "1.0"^^xsd:double ;
       ] ;
     ] .
   ] .
