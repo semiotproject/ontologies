@@ -37,7 +37,7 @@ Ontology URI: http://purl.org/NET/ssnext/machinetools#
 ```
 @prefix ssn: <http://purl.oclc.org/NET/ssnx/ssn#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix qudt: <http://www.qudt.org/qudt/owl/1.0.0/qudt/#> .
+@prefix qudt: <http://qudt.org/schema/qudt#> .
 @prefix mcht: <http://purl.org/NET/ssnext/machinetools#> .
 @prefix : <http://example.com/> .
 
