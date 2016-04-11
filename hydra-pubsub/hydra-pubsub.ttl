@@ -1,0 +1,190 @@
+@prefix : <http://w3id.org/semiot/ontologies/hydra-pubsub##> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@base <http://w3id.org/semiot/ontologies/hydra-pubsub#> .
+
+<http://w3id.org/semiot/ontologies/hydra-pubsub#> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://w3id.org/semiot/ontologies/publishes
+
+<http://w3id.org/semiot/ontologies/publishes> rdf:type owl:AnnotationProperty ;
+                                              
+                                              rdfs:subPropertyOf hydra:returns .
+
+
+
+###  http://www.w3.org/ns/hydra/core#returns
+
+hydra:returns rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://w3id.org/semiot/ontologies/fromPredicate
+
+<http://w3id.org/semiot/ontologies/fromPredicate> rdf:type owl:ObjectProperty ;
+                                                  
+                                                  rdfs:domain <http://w3id.org/semiot/ontologies/PropertyToPropertyMapping> ;
+                                                  
+                                                  rdfs:range rdfs:Property .
+
+
+
+###  http://w3id.org/semiot/ontologies/parameterMapping
+
+<http://w3id.org/semiot/ontologies/parameterMapping> rdf:type owl:ObjectProperty .
+
+
+
+###  http://w3id.org/semiot/ontologies/protocol
+
+<http://w3id.org/semiot/ontologies/protocol> rdf:type owl:ObjectProperty ;
+                                             
+                                             rdfs:domain <http://w3id.org/semiot/ontologies/PublishSubscribeOperation> ;
+                                             
+                                             rdfs:range <http://w3id.org/semiot/ontologies/PublishSubscribeProtocol> .
+
+
+
+###  http://w3id.org/semiot/ontologies/toPredicate
+
+<http://w3id.org/semiot/ontologies/toPredicate> rdf:type owl:ObjectProperty ;
+                                                
+                                                rdfs:domain <http://w3id.org/semiot/ontologies/PropertyToPropertyMapping> ;
+                                                
+                                                rdfs:range rdfs:Property .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://w3id.org/semiot/ontologies/endpoint
+
+<http://w3id.org/semiot/ontologies/endpoint> rdf:type owl:DatatypeProperty ;
+                                             
+                                             rdfs:domain <http://w3id.org/semiot/ontologies/PublishSubscribeOperation> ;
+                                             
+                                             rdfs:range xsd:anyURI .
+
+
+
+###  http://w3id.org/semiot/ontologies/topic
+
+<http://w3id.org/semiot/ontologies/topic> rdf:type owl:DatatypeProperty ;
+                                          
+                                          rdfs:domain <http://w3id.org/semiot/ontologies/PublishSubscribeOperation> ;
+                                          
+                                          rdfs:range xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://w3id.org/semiot/ontologies/PropertyToPropertyMapping
+
+<http://w3id.org/semiot/ontologies/PropertyToPropertyMapping> rdf:type owl:Class .
+
+
+
+###  http://w3id.org/semiot/ontologies/PublishOperation
+
+<http://w3id.org/semiot/ontologies/PublishOperation> rdf:type owl:Class ;
+                                                     
+                                                     rdfs:subClassOf <http://w3id.org/semiot/ontologies/PublishSubscribeOperation> .
+
+
+
+###  http://w3id.org/semiot/ontologies/PublishSubscribeOperation
+
+<http://w3id.org/semiot/ontologies/PublishSubscribeOperation> rdf:type owl:Class ;
+                                                              
+                                                              rdfs:subClassOf hydra:Operation .
+
+
+
+###  http://w3id.org/semiot/ontologies/PublishSubscribeProtocol
+
+<http://w3id.org/semiot/ontologies/PublishSubscribeProtocol> rdf:type owl:Class .
+
+
+
+###  http://w3id.org/semiot/ontologies/SubscribeOperation
+
+<http://w3id.org/semiot/ontologies/SubscribeOperation> rdf:type owl:Class ;
+                                                       
+                                                       rdfs:subClassOf <http://w3id.org/semiot/ontologies/PublishSubscribeOperation> .
+
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Property
+
+rdfs:Property rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/ns/hydra/core#Operation
+
+hydra:Operation rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://w3id.org/semiot/ontologies/WAMP
+
+<http://w3id.org/semiot/ontologies/WAMP> rdf:type <http://w3id.org/semiot/ontologies/PublishSubscribeProtocol> ,
+                                                  owl:NamedIndividual .
+
+
+
+###  http://w3id.org/semiot/ontologies/WebSocket
+
+<http://w3id.org/semiot/ontologies/WebSocket> rdf:type <http://w3id.org/semiot/ontologies/PublishSubscribeProtocol> ,
+                                                       owl:NamedIndividual .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
