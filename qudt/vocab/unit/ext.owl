@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns="http://w3id.org/qudt/vocab/unit/ext#"
+     xml:base="http://w3id.org/qudt/vocab/unit/ext"
+     xmlns:qudt="http://qudt.org/schema/qudt#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://w3id.org/qudt/vocab/unit/ext">
+        <owl:imports rdf:resource="http://qudt.org/1.1/vocab/unit"/>
+    </owl:Ontology>
+    
+
+    <!-- http://w3id.org/qudt/vocab/unit/ext#WattHour -->
+
+    <rdf:Description rdf:about="http://w3id.org/qudt/vocab/unit/ext#WattHour">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Watt-Hour</rdfs:label>
+        <qudt:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The watt-hour (abbreviated Wh) is a derived unit of energy. If the energy is being transmitted or used at a constant rate (power) over a period of time, the total energy in kilowatt-hours is the product of the power in kilowatts and the time in hours. The kilowatt-hour is commonly used as a billing unit for energy delivered to consumers by electric utilities.</qudt:description>        
+		<qudt:quantityKind rdf:resource="http://qudt.org/vocab/quantity#EnergyAndWork"/>
+    </rdf:Description>
+</rdf:RDF>
